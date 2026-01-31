@@ -1,0 +1,18 @@
+:root {
+  --night-owl-line-height: 2em;
+  --night-owl-font-size: 15px;
+  --night-owl-font-family: Segoe UI,Roboto,sans-serif;
+  --night-owl-title-font-family: Segoe UI,Roboto,sans-serif;
+}
+
+.cp__plugins-settings-inner .desc-item:hover {
+  background: transparent;
+}
+
+#journals .journal-item {
+  border-top: none;
+}
+
+.form-checkbox:checked {
+  background-color: var(--ct-secondary-color)
+}

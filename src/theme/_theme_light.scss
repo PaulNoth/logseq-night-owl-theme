@@ -1,0 +1,339 @@
+.white-theme,
+html[data-theme="light"] {
+  --ct-primary-color: #F0F0F0;
+  --ct-primary-hover-color: #d3e8f8;
+  --ct-secondary-color: #2AA298;
+  --ct-tertiary-color: #F6F6F6;
+  --ct-primary-text-color: #403f53;
+  --ct-icon-color: #403f53;
+
+  --ct-warning-color: #de3d3b;
+  --ct-success-color: #08916a;
+  --ct-highlight-color: #d3e8f8;
+
+  --ls-primary-background-color: #FBFBFB;
+  --ls-secondary-background-color: #F0F0F0;
+  --ls-tertiary-background-color: #F6F6F6;
+  --ls-primary-text-color: #403f53;
+  --ls-secondary-text-color: #93A1A1;
+  --ls-title-text-color: #403f53;
+  --ls-link-text-color: #4876d6;
+  --ls-guideline-color: #d9d9d9;
+  --ls-border-color: #d9d9d9;
+  --ls-selection-background-color: #E0E0E0;
+  --ls-table-tr-even-background-color: #F6F6F6;
+  --ls-block-properties-background-color: #F6F6F6;
+  --ls-page-checkbox-border-color: #2AA298;
+
+  /* Code and syntax colors */
+  --ls-code-bg-color: #F6F6F6;
+  --ls-code-text-color: #403f53;
+
+  #search-button, #left-menu {
+    color: #403f53;
+  }
+
+
+  #main-content-container .editor-wrapper textarea, #main-content-container .block-content-wrapper .inline {
+    line-height: var(--night-owl-line-height);
+    font-size: var(--night-owl-font-size);
+  }
+
+  #main-content-container {
+    font-family: var(--night-owl-font-family);
+    font-size: 1em;
+    font-weight: 400;
+    letter-spacing: .002em;
+  }
+
+  #main-content-container h1.title {
+    font-family: var(--night-owl-title-font-family);
+  }
+
+  .blocks-container {
+    padding: 10px;
+    .pr-2 {
+      font-size: 13px;
+    }
+  }
+
+
+  .left-sidebar-inner a.item, .left-sidebar-inner .nav-content-item .bd ul a, .left-sidebar-inner .header a{
+    color: #403f53;
+  }
+
+  .cp__header a {
+    color: #403f53;
+  }
+
+  .cp__header a:hover {
+    color: #4876d6;
+  }
+
+  .ui__modal-panel {
+    background-color: #FBFBFB;
+  }
+
+  .page-reference:hover {
+    background-color: transparent;
+  }
+
+  .color-level {
+    background-color: transparent;
+    .content {
+      padding: 5px 0;
+    }
+    .blocks-container {
+      background-color: #F6F6F6;
+      padding: 10px;
+      .pr-2 {
+        font-size: 13px;
+      }
+    }
+
+  }
+
+  .tippy-tooltip {
+    background-color: #F0F0F0;
+    border: 1px solid #d9d9d9;
+  }
+
+  .tippy-wrapper {
+    background-color: #FBFBFB;
+  }
+
+  .page-properties {
+    font-size: 13px;
+    line-height: 2.2em;
+
+    .page-property-key {
+      color:var(--ct-primary-text-color)
+    }
+  }
+
+  a.page-ref, a.external-link {
+    color: #4876d6;
+    border-bottom: 1px dashed #d9d9d9;
+  }
+
+  a.page-ref:hover, a.external-link:hover {
+    border-bottom: 1px dashed #4876d6;
+  }
+
+  a.external-link:before {
+    font-family: tabler-icons!important;
+    content: '\ea99';
+  }
+
+  .cp__plugins-item-card, .ui__button   {
+    background-color: #F0F0F0;
+  }
+
+  #main-content-container .ui__button, .ui__modal-panel .ui__button {
+    background-color: #2AA298;
+    color: #F0F0F0;
+  }
+
+  .graph-filters {
+    background-color: #F0F0F0;
+  }
+
+  .cp__right-sidebar {
+    background-color: #F0F0F0;
+  }
+
+  .cp__right-sidebar-topbar {
+    background-color: #F0F0F0;
+    border-bottom: 1px solid #d9d9d9;
+  }
+
+  .sidebar-item-list .sidebar-item {
+    background-color: #FBFBFB;
+    margin-left: 4px;
+
+    .blocks-container  {
+      background-color: #FBFBFB;
+    }
+  }
+
+  .form-checkbox {
+    border: 1px solid var(--ls-page-checkbox-border-color);
+    border-radius: 2px;
+  }
+
+  .cp__all_pages {
+    .cp__all_pages_table {
+      th {
+        border-bottom: 1px solid #d9d9d9;
+      }
+    }
+    .search-wrap  {
+      .form-input {
+        border: none;
+        border-bottom: 1px solid #d9d9d9;
+        border-radius: 0;
+      }
+      .ui__button {
+        background: transparent !important;
+        color: #403f53;
+      }
+    }
+  }
+
+  .cp__sidebar-help-btn {
+    background-color: #F0F0F0;
+    color: #2AA298;
+    border: 1px solid #2AA298
+  }
+
+  .cp__palette-main .chosen {
+    background-color: #d3e8f8;
+  }
+
+  h1.title {
+    font-weight: 500;
+    text-decoration: none;
+    font-size:36px;
+  }
+
+  .cp__plugins-page .ui__button, .cp__settings-inner>aside ul>li.active, blockquote{
+    background-color: #F6F6F6 !important;
+  }
+
+  .cp__settings-inner>aside ul>li>a {
+    background: none;
+  }
+
+  .keyboard-shortcut>code {
+    color: #403f53;
+  }
+
+  .cp__themes-installed>.it {
+    background: none;
+  }
+
+  .cp__themes-installed>.it.is-active {
+    background-color: #d3e8f8;
+    border: none;
+  }
+
+  .cp__settings-app-updater .update-state {
+    background-color: #F6F6F6;
+    color: #403f53;
+  }
+
+  #main-content input.form-checkbox:checked {
+    background-color: var(--ls-page-checkbox-border-color);
+  }
+
+  /* Code blocks and syntax highlighting */
+  code, .CodeMirror {
+    background-color: #F6F6F6;
+    color: #403f53;
+  }
+
+  pre {
+    background-color: #F6F6F6;
+    border: 1px solid #d9d9d9;
+  }
+
+  .extensions__code-lang {
+    background-color: #F0F0F0;
+    color: #403f53;
+  }
+
+  /* Line numbers */
+  .CodeMirror-linenumber {
+    color: #90A7B2;
+  }
+
+  .CodeMirror-activeline-background {
+    background: #F0F0F0;
+  }
+
+  /* Active block focus */
+  .ls-block:focus-within {
+    background-color: #F0F0F0;
+  }
+
+  /* Tag styling */
+  .tag {
+    background-color: #F0F0F0;
+    color: #994cc3;
+    border: 1px solid #d9d9d9;
+  }
+
+  /* Heading colors */
+  h1, h2, h3, h4, h5, h6 {
+    color: #4876d6;
+  }
+
+  h1.title {
+    color: #403f53;
+  }
+
+  /* Bullet markers */
+  .ls-block .bullet {
+    background-color: #403f53;
+  }
+
+  .ls-block .bullet-closed {
+    background-color: #93A1A1;
+  }
+
+  /* Inline code */
+  :not(pre) > code {
+    background-color: #F0F0F0;
+    color: #994cc3;
+    padding: 2px 6px;
+    border-radius: 3px;
+    border: 1px solid #d9d9d9;
+  }
+
+  /* Priority markers */
+  .priority {
+    color: #de3d3b;
+  }
+
+  /* Timestamps */
+  .timestamp {
+    color: #0c969b;
+  }
+
+  /* Selection */
+  ::selection {
+    background-color: #E0E0E0;
+    color: #403f53;
+  }
+
+  /* Better blockquote styling */
+  blockquote {
+    border-left: 3px solid #2AA298;
+    color: #403f53;
+  }
+
+  /* Link hover improvements */
+  .external-link {
+    color: #4876d6;
+  }
+
+  .external-link:hover {
+    color: #2AA298;
+  }
+
+  /* Improved contrast for markers */
+  .marker-switch {
+    background-color: #2AA298;
+    color: #F0F0F0;
+  }
+
+  /* Page reference hover */
+  .page-ref {
+    color: #4876d6;
+  }
+
+  .page-ref:hover {
+    color: #2AA298;
+    background-color: transparent;
+  }
+}

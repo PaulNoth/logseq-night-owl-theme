@@ -1,0 +1,59 @@
+.white-theme,
+html[data-theme=light], .dark-theme, html[data-theme=dark] {
+  /* == Backgrounds == */
+  --ct-primary-color: #011627;
+  --ct-primary-hover-color: #010d18;
+  --ct-secondary-color: #5f7e97;
+  --ct-tertiary-color: #F6F6F6;
+  --ct-primary-text-color: #403f53;
+  --ct-icon-color: #d6deeb;
+
+  --ct-warning-color: #EF5350;
+  --ct-warning-color-text: var(--ct-primary-color);
+  --ct-success-color: #9CCC65;
+  --ct-success-color-text: var(--ct-primary-color);
+  --ct-highlight-color: #7e57c2;
+  --ct-highlight-color-text: #ffffff;
+
+  --ls-link-text-color: var(--ct-primary-text-color);
+  --ls-primary-background-color: #FBFBFB;
+  --ls-secondary-background-color: var(--ct-primary-color);
+  --ls-tertiary-background-color: var(--ct-tertiary-color);
+  --ls-quaternary-background-color: var(--ct-primary-hover-color);
+  --ls-table-tr-even-background-color: var(--ct-tertiary-color);
+  --ls-page-properties-background-color: var(--ct-tertiary-color);
+
+  --ls-page-blockquote-border-color: var(--ct-secondary-color);
+  --ls-page-blockquote-bg-color: #FBFBFB;
+
+  /* == Text == */
+  --ls-primary-text-color: #403f53;
+  --ls-secondary-text-color: #89a4bb;
+  --night-owl-header-text-color: #403f53;
+  --night-owl-sidebar-text-color: #89a4bb;
+  --night-owl-sidebar-text-color-hover: #d2dee7;
+
+  /* == Checkboxes */
+  --ls-page-checkbox-color: #ffffff;
+  --ls-page-checkbox-border-color: #5f7e97;
+  /* == Borders + Outlines */
+  --ls-border-color: #5f7e97;
+  --ls-guideline-color: #262A39;
+
+  /* == Misc == */
+  --ls-menu-hover-color: var(--ct-tertiary-color);
+  --ls-title-text-color: var(--ct-primary-text-color);
+  --ls-block-highlight-color: var(--ct-tertiary-color);
+  --ls-icon-color: var(--ct-icon-color);
+  --ls-search-icon-color: var(--ct-icon-color);
+  --color-level-1: var(--ls-secondary-background-color);
+  --color-level-2: var(--ls-tertiary-background-color);
+  --color-level-3: var(--ls-quaternary-background-color);
+  --color-level-4: #0b2942;
+  --color-level-5: #01111d;
+  --color-level-6: #7e57c2;
+
+  /* === SELECTIONS === */
+  --ls-selection-background-color: #E0E0E0;
+
+}

@@ -1,0 +1,250 @@
+.dark-theme,
+html[data-theme="dark"] {
+  --ct-highlight-color: #7e57c2;
+  --ls-selection-background-color: #1d3b53;
+  --ls-primary-background-color: #011627;
+  --ct-primary-text-color: #d6deeb;
+  --ls-title-text-color: #d2dee7;
+  --ls-link-ref-text-color: #d6deeb;
+  --ls-primary-text-color: var(--ct-primary-text-color);
+  --ls-link-text-color: #82AAFF;
+  --ls-guideline-color: #122d42;
+  --ls-table-tr-even-background-color: #010b14;
+  --ls-block-properties-background-color: #0b2942;
+
+  --ls-block-bullet-color: #d6deeb;
+  --ls-block-bullet-border-color: #4b6479;
+
+  --ls-scrollbar-foreground-color: #084d8180;
+  --ls-scrollbar-background-color: #010b14;
+  --ls-scrollbar-thumb-hover-color: #084d8180;
+
+  --ls-page-blockquote-border-color: #5f7e97;
+  --ls-page-blockquote-bg-color: #01111d;
+  --ls-page-blockquote-color: var(--ct-primary-text-color);
+
+  /* Terminal/Code colors */
+  --ls-code-bg-color: #01111d;
+  --ls-code-text-color: #d6deeb;
+
+  ::selection {
+    background-color: #1d3b53;
+    color: #d6deeb;
+  }
+
+  #main-content-container .editor-wrapper textarea, #main-content-container .block-content-wrapper .inline {
+    line-height: var(--night-owl-line-height);
+    font-size: var(--night-owl-font-size);
+  }
+
+  .page-properties {
+    background-color: #0b2942;
+  }
+
+
+  #main-content-container {
+    font-family: var(--night-owl-font-family);
+    font-size: 1em;
+    font-weight: 400;
+    letter-spacing: .002em;
+  }
+
+  #main-content-container h1.title {
+    font-family: var(--night-owl-title-font-family);
+  }
+
+  .blocks-container {
+    padding: 10px;
+    .pr-2 {
+      font-size: var(--night-owl-font-size)
+    }
+  }
+
+  .color-level .blocks-container {
+    background-color: #0b2942;
+  }
+
+  a.page-ref, a.external-link {
+    color: #d6deeb;
+    border-bottom: 1px dashed #122d42;
+  }
+
+  a.page-ref:hover, a.external-link:hover {
+    border-bottom: 1px dashed #82AAFF;
+    color: #82AAFF;
+  }
+
+  .color-level {
+    background: none;
+  }
+
+  .cp__sidebar-left-layout {
+    background-color: var(--ct-primary-color);
+  }
+
+  .cp__plugins-item-lists .cp__plugins-item-card {
+    background-color: transparent;
+    border: 1px solid var(--ct-primary-color);
+  }
+
+  .cp__plugins-page .tabs .ui__button.active>span {
+    color:  var(--ct-primary-color);
+  }
+
+  .menu-link:hover, button.menu:focus, button.pull:hover, #sidebar-nav-wrapper .dropdown-wrapper a:hover{
+    color:  var(--ct-primary-color);
+  }
+
+  #main-content input.form-checkbox:checked {
+    background-color: var(--ls-page-checkbox-border-color);
+  }
+
+  .page-properties {
+    font-size: 13px;
+    line-height: 2.2em;
+
+    .page-property-key {
+      color:var(--ct-primary-text-color)
+    }
+  }
+
+  a.external-link:before {
+    font-family: tabler-icons!important;
+    content: '\ea99';
+  }
+
+  .page-reference:hover {
+    background-color: transparent;
+  }
+
+  .left-sidebar-inner .nav-content-item>.header:hover {
+    background-color: #010d18;
+    color: #d2dee7;
+  }
+
+  #main-content-container .ui__button, .ui__modal-panel .ui__button {
+    background-color: #7e57c2;
+    color: #ffffff;
+    border: none;
+  }
+  .cp__all_pages {
+
+    .ti-search {
+      color: var(--ls-link-text-color);
+    }
+
+    .cp__all_pages_table {
+      th {
+        border-bottom: 1px solid var(--ls-guideline-color);
+      }
+    }
+    .search-wrap  {
+      .form-input {
+        border: none;
+        border-bottom: 1px solid var(--ls-guideline-color);
+        border-radius: 0;
+      }
+      .ui__button {
+        background: transparent !important;
+        color: #d6deeb;
+      }
+    }
+  }
+
+  .cp__themes-installed>.it.is-active {
+    color: var(--ct-primary-color)
+  }
+
+  .logseq-focus-toolbar, .cp__header {
+    a.button.active, a.button:hover {
+      color: var(--ct-primary-color)
+    }
+  }
+
+  .block-highlight, .content .selected {
+    background-color: var(--ls-block-properties-background-color);
+    border: none;
+  }
+
+  .search-results-wrap a:hover {
+    color: #82AAFF;
+    background-color: #010d18;
+  }
+
+  text-area {
+    color: var(--ct-primary-text-color)
+  }
+
+  /* Code blocks and syntax highlighting */
+  code, .CodeMirror {
+    background-color: #01111d;
+    color: #d6deeb;
+  }
+
+  pre {
+    background-color: #01111d;
+    border: 1px solid #122d42;
+  }
+
+  .extensions__code-lang {
+    background-color: #0b2942;
+  }
+
+  /* Enhanced line numbers */
+  .CodeMirror-linenumber {
+    color: #4b6479;
+  }
+
+  .CodeMirror-activeline-background {
+    background: #010d18;
+  }
+
+  /* Better visibility for active elements */
+  .ls-block:focus-within {
+    background-color: #010d18;
+  }
+
+  /* Improved tag styling */
+  .tag {
+    background-color: #0b2942;
+    color: #c792ea;
+    border: 1px solid #122d42;
+  }
+
+  /* Heading colors inspired by terminal theme */
+  h1, h2, h3, h4, h5, h6 {
+    color: #82AAFF;
+  }
+
+  h1.title {
+    color: #d2dee7;
+  }
+
+  /* Better marker/bullet visibility */
+  .ls-block .bullet {
+    background-color: #d6deeb;
+  }
+
+  .ls-block .bullet-closed {
+    background-color: #5f7e97;
+  }
+
+  /* Inline code */
+  :not(pre) > code {
+    background-color: #0b2942;
+    color: #c5e478;
+    padding: 2px 6px;
+    border-radius: 3px;
+    border: 1px solid #122d42;
+  }
+
+  /* Priority markers */
+  .priority {
+    color: #c792ea;
+  }
+
+  /* Improved contrast for timestamps */
+  .timestamp {
+    color: #7fdbca;
+  }
+}

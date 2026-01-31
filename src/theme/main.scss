@@ -1,0 +1,9 @@
+@import "global";
+@import "colors";
+@import "sidebar";
+@import "theme_dark";
+@import "theme_light";
+
+body {
+  color: var(--ct-primary-text-color);
+}

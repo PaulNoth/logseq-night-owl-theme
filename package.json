@@ -1,0 +1,31 @@
+{
+  "name": "logseq-night-owl-theme",
+  "version": "1.0.0",
+  "description": "Night Owl Theme for Logseq.",
+  "author": "Pavol Pidanič",
+  "license": "MIT",
+  "logseq": {
+    "themes": [
+      {
+        "name": "Night Owl Theme: Light",
+        "url": "./custom.css",
+        "mode": "light"
+      },
+      {
+        "name": "Night Owl Theme: Dark",
+        "url": "./custom.css",
+        "mode": "dark"
+      }
+    ],
+    "icon": "./icon.png",
+    "id": "logseq-night-owl-theme"
+  },
+  "scripts": {
+    "build": "npx sass src/theme/main.scss custom.css --no-source-map",
+    "watch": "npx sass src/theme/main.scss custom.css --no-source-map --watch",
+    "postversion": "git push && git push --tags"
+  },
+  "devDependencies": {
+    "sass": "^1.43.4"
+  }
+}
