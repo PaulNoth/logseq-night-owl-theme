@@ -5,68 +5,38 @@ on:
     tags:
       - "v*"
 
+permissions:
+  contents: write
+
 env:
   PLUGIN_NAME: logseq-night-owl-theme
 
 jobs:
-  build:
+  release:
     runs-on: ubuntu-latest
-
     steps:
-      - name: Checkout
-        uses: actions/checkout@v4
+      - uses: actions/checkout@v4
 
-      - name: Use Node
-        uses: actions/setup-node@v4
+      - uses: actions/setup-node@v4
         with:
-          node-version: "20"
+          node-version: 20
+          cache: 'npm'
 
-      - name: Install dependencies
-        run: npm ci
+      - run: npm ci
+      - run: npm run build
 
-      - name: Build CSS
-        run: npm run build
-
-      - name: Prepare plugin folder
+      - name: Package plugin
         run: |
-          mkdir $PLUGIN_NAME
-          cp custom.css $PLUGIN_NAME/
-          cp package.json $PLUGIN_NAME/
-          cp icon.png $PLUGIN_NAME/ || true
+          mkdir ${{ env.PLUGIN_NAME }}
+          cp custom.css ${{ env.PLUGIN_NAME }}/
+          cp package.json ${{ env.PLUGIN_NAME }}/
+          cp icon.png ${{ env.PLUGIN_NAME }} || true
+          zip -r ${{ env.PLUGIN_NAME }}.zip ${{ env.PLUGIN_NAME }}
 
-      - name: Zip plugin
-        id: build
-        run: |
-          zip -r $PLUGIN_NAME.zip $PLUGIN_NAME
-          echo "tag_name=${GITHUB_REF##*/}" >> $GITHUB_OUTPUT
-
-      - name: Create or update release
-        id: create_release
-        uses: ncipollo/release-action@v1
+      - uses: softprops/action-gh-release@v2
         with:
-          token: ${{ secrets.GITHUB_TOKEN }}
-          tag: ${{ steps.build.outputs.tag_name }}
-          allowUpdates: true
+          files: |
+            ${{ env.PLUGIN_NAME }}.zip
+            package.json
+          generate_release_notes: true
           draft: false
-          prerelease: false
-
-      - name: Upload zip file
-        id: upload_zip
-        uses: actions/upload-release-asset@v1
-        env:
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-        with:
-          upload_url: ${{ steps.create_release.outputs.upload_url }}
-          asset_path: ./${{ env.PLUGIN_NAME }}.zip
-          asset_name: ${{ env.PLUGIN_NAME }}-${{ steps.build.outputs.tag_name }}.zip
-          asset_content_type: application/zip
-
-
-      - name: Upload package.json asset
-        uses: actions/upload-release-asset@v1
-        with:
-          upload_url: ${{ steps.create_release.outputs.upload_url }}
-          asset_path: ./package.json
-          asset_name: package.json
-          asset_content_type: application/json
-          token: ${{ secrets.GITHUB_TOKEN }}
