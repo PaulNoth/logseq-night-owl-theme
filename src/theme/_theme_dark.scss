@@ -33,8 +33,6 @@ html[data-theme="dark"] {
   }
 
   #main-content-container .editor-wrapper textarea, #main-content-container .block-content-wrapper .inline {
-    line-height: var(--night-owl-line-height);
-    font-size: var(--night-owl-font-size);
   }
 
   .page-properties {
@@ -43,21 +41,16 @@ html[data-theme="dark"] {
 
 
   #main-content-container {
-    font-family: var(--night-owl-font-family);
     font-size: 1em;
     font-weight: 400;
     letter-spacing: .002em;
   }
 
   #main-content-container h1.title {
-    font-family: var(--night-owl-title-font-family);
   }
 
   .blocks-container {
     padding: 10px;
-    .pr-2 {
-      font-size: var(--night-owl-font-size)
-    }
   }
 
   .color-level .blocks-container {

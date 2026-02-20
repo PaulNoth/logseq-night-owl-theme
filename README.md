@@ -13,7 +13,6 @@ A beautifully crafted theme for [Logseq](https://logseq.com/) that brings carefu
 ## Features
 
 - **Dual Mode Support** — Switch between light and dark variants to match your environment and preferences
-- **Thoughtful Typography** — Easily customize font families, sizes, and line heights for optimal readability
 - **Modern Development** — Built with SCSS for organized, maintainable source code
 
 ## Installation
@@ -26,19 +25,6 @@ A beautifully crafted theme for [Logseq](https://logseq.com/) that brings carefu
 6. Select either "Night Owl Theme: Light" or "Night Owl Theme: Dark"
 
 Alternatively, you can install it manually by placing the `custom.css` file in your Logseq configuration directory.
-
-## Customization
-
-You can customize the theme by overriding the following CSS variables in your Logseq `custom.css` file:
-
-```css
-:root {
-  --night-owl-line-height: 2em;
-  --night-owl-font-size: 15px;
-  --night-owl-font-family: Segoe UI, Roboto, sans-serif;
-  --night-owl-title-font-family: Segoe UI, Roboto, sans-serif;
-}
-```
 
 ## Development
 
