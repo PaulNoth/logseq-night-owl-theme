@@ -154,15 +154,19 @@ html[data-theme=dark] ::selection {
   background-color: #1d3b53;
   color: #d6deeb;
 }
-.dark-theme .page-properties,
-html[data-theme=dark] .page-properties {
-  background-color: #0b2942;
-}
 .dark-theme #main-content-container,
 html[data-theme=dark] #main-content-container {
   font-size: 1em;
   font-weight: 400;
   letter-spacing: 0.002em;
+}
+.dark-theme .page-properties,
+html[data-theme=dark] .page-properties {
+  background-color: #0b2942;
+}
+.dark-theme .page-properties .page-property-key,
+html[data-theme=dark] .page-properties .page-property-key {
+  color: var(--ct-primary-text-color);
 }
 .dark-theme .blocks-container,
 html[data-theme=dark] .blocks-container {
@@ -211,15 +215,6 @@ html[data-theme=dark] #sidebar-nav-wrapper .dropdown-wrapper a:hover {
 .dark-theme #main-content input.form-checkbox:checked,
 html[data-theme=dark] #main-content input.form-checkbox:checked {
   background-color: var(--ls-page-checkbox-border-color);
-}
-.dark-theme .page-properties,
-html[data-theme=dark] .page-properties {
-  font-size: 13px;
-  line-height: 2.2em;
-}
-.dark-theme .page-properties .page-property-key,
-html[data-theme=dark] .page-properties .page-property-key {
-  color: var(--ct-primary-text-color);
 }
 .dark-theme a.external-link:before,
 html[data-theme=dark] a.external-link:before {
@@ -433,6 +428,10 @@ html[data-theme=light] #main-content-container {
   font-weight: 400;
   letter-spacing: 0.002em;
 }
+.white-theme .page-properties .page-property-key,
+html[data-theme=light] .page-properties .page-property-key {
+  color: var(--ct-primary-text-color);
+}
 .white-theme .blocks-container,
 html[data-theme=light] .blocks-container {
   padding: 10px;
@@ -480,15 +479,6 @@ html[data-theme=light] .tippy-tooltip {
 .white-theme .tippy-wrapper,
 html[data-theme=light] .tippy-wrapper {
   background-color: #FBFBFB;
-}
-.white-theme .page-properties,
-html[data-theme=light] .page-properties {
-  font-size: 13px;
-  line-height: 2.2em;
-}
-.white-theme .page-properties .page-property-key,
-html[data-theme=light] .page-properties .page-property-key {
-  color: var(--ct-primary-text-color);
 }
 .white-theme a.page-ref, .white-theme a.external-link,
 html[data-theme=light] a.page-ref,

@@ -35,17 +35,18 @@ html[data-theme="light"] {
 
 
   #main-content-container .editor-wrapper textarea, #main-content-container .block-content-wrapper .inline {
-
   }
 
   #main-content-container {
-
     font-size: 1em;
     font-weight: 400;
     letter-spacing: .002em;
   }
 
-  #main-content-container h1.title {
+  .page-properties {
+    .page-property-key {
+      color:var(--ct-primary-text-color)
+    }
   }
 
   .blocks-container {
@@ -92,15 +93,6 @@ html[data-theme="light"] {
 
   .tippy-wrapper {
     background-color: #FBFBFB;
-  }
-
-  .page-properties {
-    font-size: 13px;
-    line-height: 2.2em;
-
-    .page-property-key {
-      color:var(--ct-primary-text-color)
-    }
   }
 
   a.page-ref, a.external-link {
