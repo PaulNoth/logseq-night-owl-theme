@@ -35,26 +35,23 @@ html[data-theme="light"] {
 
 
   #main-content-container .editor-wrapper textarea, #main-content-container .block-content-wrapper .inline {
-    line-height: var(--night-owl-line-height);
-    font-size: var(--night-owl-font-size);
   }
 
   #main-content-container {
-    font-family: var(--night-owl-font-family);
     font-size: 1em;
     font-weight: 400;
     letter-spacing: .002em;
   }
 
-  #main-content-container h1.title {
-    font-family: var(--night-owl-title-font-family);
+  .page-properties {
+    background-color: var(--ls-block-properties-background-color);
+    .page-property-key {
+      color:var(--ct-primary-text-color)
+    }
   }
 
   .blocks-container {
     padding: 10px;
-    .pr-2 {
-      font-size: 13px;
-    }
   }
 
 
@@ -84,11 +81,8 @@ html[data-theme="light"] {
       padding: 5px 0;
     }
     .blocks-container {
-      background-color: #F6F6F6;
+      background-color: var(--ls-block-properties-background-color);
       padding: 10px;
-      .pr-2 {
-        font-size: 13px;
-      }
     }
 
   }
@@ -100,15 +94,6 @@ html[data-theme="light"] {
 
   .tippy-wrapper {
     background-color: #FBFBFB;
-  }
-
-  .page-properties {
-    font-size: 13px;
-    line-height: 2.2em;
-
-    .page-property-key {
-      color:var(--ct-primary-text-color)
-    }
   }
 
   a.page-ref, a.external-link {
@@ -193,11 +178,10 @@ html[data-theme="light"] {
   h1.title {
     font-weight: 500;
     text-decoration: none;
-    font-size:36px;
   }
 
   .cp__plugins-page .ui__button, .cp__settings-inner>aside ul>li.active, blockquote{
-    background-color: #F6F6F6 !important;
+    background-color: var(--ls-block-properties-background-color) !important;
   }
 
   .cp__settings-inner>aside ul>li>a {
@@ -218,7 +202,7 @@ html[data-theme="light"] {
   }
 
   .cp__settings-app-updater .update-state {
-    background-color: #F6F6F6;
+    background-color: var(--ls-block-properties-background-color);
     color: #403f53;
   }
 
@@ -228,12 +212,12 @@ html[data-theme="light"] {
 
   /* Code blocks and syntax highlighting */
   code, .CodeMirror {
-    background-color: #F6F6F6;
+    background-color: var(--ls-block-properties-background-color);
     color: #403f53;
   }
 
   pre {
-    background-color: #F6F6F6;
+    background-color: var(--ls-block-properties-background-color);
     border: 1px solid #d9d9d9;
   }
 
