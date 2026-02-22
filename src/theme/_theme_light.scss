@@ -44,6 +44,7 @@ html[data-theme="light"] {
   }
 
   .page-properties {
+    background-color: var(--ls-block-properties-background-color);
     .page-property-key {
       color:var(--ct-primary-text-color)
     }
@@ -80,7 +81,7 @@ html[data-theme="light"] {
       padding: 5px 0;
     }
     .blocks-container {
-      background-color: #F6F6F6;
+      background-color: var(--ls-block-properties-background-color);
       padding: 10px;
     }
 
@@ -180,7 +181,7 @@ html[data-theme="light"] {
   }
 
   .cp__plugins-page .ui__button, .cp__settings-inner>aside ul>li.active, blockquote{
-    background-color: #F6F6F6 !important;
+    background-color: var(--ls-block-properties-background-color) !important;
   }
 
   .cp__settings-inner>aside ul>li>a {
@@ -201,7 +202,7 @@ html[data-theme="light"] {
   }
 
   .cp__settings-app-updater .update-state {
-    background-color: #F6F6F6;
+    background-color: var(--ls-block-properties-background-color);
     color: #403f53;
   }
 
@@ -211,12 +212,12 @@ html[data-theme="light"] {
 
   /* Code blocks and syntax highlighting */
   code, .CodeMirror {
-    background-color: #F6F6F6;
+    background-color: var(--ls-block-properties-background-color);
     color: #403f53;
   }
 
   pre {
-    background-color: #F6F6F6;
+    background-color: var(--ls-block-properties-background-color);
     border: 1px solid #d9d9d9;
   }
 

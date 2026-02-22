@@ -45,9 +45,9 @@ html[data-theme="dark"] {
   }
 
   .page-properties {
-    background-color: #0b2942;
+    background-color: var(--ls-block-properties-background-color);
     .page-property-key {
-      color:var(--ct-primary-text-color)
+      color: var(--ct-primary-text-color)
     }
   }
 
@@ -56,7 +56,7 @@ html[data-theme="dark"] {
   }
 
   .color-level .blocks-container {
-    background-color: #0b2942;
+    background-color: var(--ls-block-properties-background-color);
   }
 
   a.page-ref, a.external-link {
@@ -173,7 +173,7 @@ html[data-theme="dark"] {
   }
 
   .extensions__code-lang {
-    background-color: #0b2942;
+    background-color: var(--ls-block-properties-background-color);
   }
 
   /* Enhanced line numbers */
@@ -192,7 +192,7 @@ html[data-theme="dark"] {
 
   /* Improved tag styling */
   .tag {
-    background-color: #0b2942;
+    background-color: var(--ls-block-properties-background-color);
     color: #c792ea;
     border: 1px solid #122d42;
   }
@@ -217,7 +217,7 @@ html[data-theme="dark"] {
 
   /* Inline code */
   :not(pre) > code {
-    background-color: #0b2942;
+    background-color: var(--ls-block-properties-background-color);
     color: #c5e478;
     padding: 2px 6px;
     border-radius: 3px;

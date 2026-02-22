@@ -162,7 +162,7 @@ html[data-theme=dark] #main-content-container {
 }
 .dark-theme .page-properties,
 html[data-theme=dark] .page-properties {
-  background-color: #0b2942;
+  background-color: var(--ls-block-properties-background-color);
 }
 .dark-theme .page-properties .page-property-key,
 html[data-theme=dark] .page-properties .page-property-key {
@@ -174,7 +174,7 @@ html[data-theme=dark] .blocks-container {
 }
 .dark-theme .color-level .blocks-container,
 html[data-theme=dark] .color-level .blocks-container {
-  background-color: #0b2942;
+  background-color: var(--ls-block-properties-background-color);
 }
 .dark-theme a.page-ref, .dark-theme a.external-link,
 html[data-theme=dark] a.page-ref,
@@ -299,7 +299,7 @@ html[data-theme=dark] pre {
 }
 .dark-theme .extensions__code-lang,
 html[data-theme=dark] .extensions__code-lang {
-  background-color: #0b2942;
+  background-color: var(--ls-block-properties-background-color);
 }
 .dark-theme,
 html[data-theme=dark] {
@@ -327,7 +327,7 @@ html[data-theme=dark] {
 }
 .dark-theme .tag,
 html[data-theme=dark] .tag {
-  background-color: #0b2942;
+  background-color: var(--ls-block-properties-background-color);
   color: #c792ea;
   border: 1px solid #122d42;
 }
@@ -366,7 +366,7 @@ html[data-theme=dark] {
 }
 .dark-theme :not(pre) > code,
 html[data-theme=dark] :not(pre) > code {
-  background-color: #0b2942;
+  background-color: var(--ls-block-properties-background-color);
   color: #c5e478;
   padding: 2px 6px;
   border-radius: 3px;
@@ -428,6 +428,10 @@ html[data-theme=light] #main-content-container {
   font-weight: 400;
   letter-spacing: 0.002em;
 }
+.white-theme .page-properties,
+html[data-theme=light] .page-properties {
+  background-color: var(--ls-block-properties-background-color);
+}
 .white-theme .page-properties .page-property-key,
 html[data-theme=light] .page-properties .page-property-key {
   color: var(--ct-primary-text-color);
@@ -468,7 +472,7 @@ html[data-theme=light] .color-level .content {
 }
 .white-theme .color-level .blocks-container,
 html[data-theme=light] .color-level .blocks-container {
-  background-color: #F6F6F6;
+  background-color: var(--ls-block-properties-background-color);
   padding: 10px;
 }
 .white-theme .tippy-tooltip,
@@ -568,7 +572,7 @@ html[data-theme=light] h1.title {
 html[data-theme=light] .cp__plugins-page .ui__button,
 html[data-theme=light] .cp__settings-inner > aside ul > li.active,
 html[data-theme=light] blockquote {
-  background-color: #F6F6F6 !important;
+  background-color: var(--ls-block-properties-background-color) !important;
 }
 .white-theme .cp__settings-inner > aside ul > li > a,
 html[data-theme=light] .cp__settings-inner > aside ul > li > a {
@@ -589,7 +593,7 @@ html[data-theme=light] .cp__themes-installed > .it.is-active {
 }
 .white-theme .cp__settings-app-updater .update-state,
 html[data-theme=light] .cp__settings-app-updater .update-state {
-  background-color: #F6F6F6;
+  background-color: var(--ls-block-properties-background-color);
   color: #403f53;
 }
 .white-theme #main-content input.form-checkbox:checked,
@@ -603,12 +607,12 @@ html[data-theme=light] {
 .white-theme code, .white-theme .CodeMirror,
 html[data-theme=light] code,
 html[data-theme=light] .CodeMirror {
-  background-color: #F6F6F6;
+  background-color: var(--ls-block-properties-background-color);
   color: #403f53;
 }
 .white-theme pre,
 html[data-theme=light] pre {
-  background-color: #F6F6F6;
+  background-color: var(--ls-block-properties-background-color);
   border: 1px solid #d9d9d9;
 }
 .white-theme .extensions__code-lang,
