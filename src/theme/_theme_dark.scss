@@ -113,6 +113,11 @@ html[data-theme="dark"] {
     color: #ffffff;
     border: none;
   }
+
+  .absolute-modal[data-modal-name="page-search"] {
+    background-color: var(--ls-primary-background-color);
+  }
+
   .cp__all_pages {
 
     .ti-search {

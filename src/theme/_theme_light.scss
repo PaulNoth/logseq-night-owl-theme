@@ -119,6 +119,10 @@ html[data-theme="light"] {
     color: #F0F0F0;
   }
 
+  .absolute-modal[data-modal-name="page-search"] {
+    background-color: var(--ls-primary-background-color);
+  }
+
   .graph-filters {
     background-color: #F0F0F0;
   }

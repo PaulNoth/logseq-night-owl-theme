@@ -237,6 +237,10 @@ html[data-theme=dark] .ui__modal-panel .ui__button {
   color: #ffffff;
   border: none;
 }
+.dark-theme .absolute-modal[data-modal-name=page-search],
+html[data-theme=dark] .absolute-modal[data-modal-name=page-search] {
+  background-color: var(--ls-primary-background-color);
+}
 .dark-theme .cp__all_pages .ti-search,
 html[data-theme=dark] .cp__all_pages .ti-search {
   color: var(--ls-link-text-color);
@@ -510,6 +514,10 @@ html[data-theme=light] #main-content-container .ui__button,
 html[data-theme=light] .ui__modal-panel .ui__button {
   background-color: #2AA298;
   color: #F0F0F0;
+}
+.white-theme .absolute-modal[data-modal-name=page-search],
+html[data-theme=light] .absolute-modal[data-modal-name=page-search] {
+  background-color: var(--ls-primary-background-color);
 }
 .white-theme .graph-filters,
 html[data-theme=light] .graph-filters {
