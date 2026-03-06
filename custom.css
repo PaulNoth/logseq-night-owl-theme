@@ -230,9 +230,9 @@ html[data-theme=dark] .left-sidebar-inner .nav-content-item > .header:hover {
   background-color: #010d18;
   color: #d2dee7;
 }
-.dark-theme #main-content-container .ui__button, .dark-theme .ui__modal-panel .ui__button,
+.dark-theme #main-content-container .ui__button, .dark-theme .ui__modal-panel .ui__button .absolute-modal[data-modal-name=page-search],
 html[data-theme=dark] #main-content-container .ui__button,
-html[data-theme=dark] .ui__modal-panel .ui__button {
+html[data-theme=dark] .ui__modal-panel .ui__button .absolute-modal[data-modal-name=page-search] {
   background-color: #7e57c2;
   color: #ffffff;
   border: none;
@@ -505,9 +505,9 @@ html[data-theme=light] .cp__plugins-item-card,
 html[data-theme=light] .ui__button {
   background-color: #F0F0F0;
 }
-.white-theme #main-content-container .ui__button, .white-theme .ui__modal-panel .ui__button,
+.white-theme #main-content-container .ui__button, .white-theme .ui__modal-panel .ui__button .absolute-modal[data-modal-name=page-search],
 html[data-theme=light] #main-content-container .ui__button,
-html[data-theme=light] .ui__modal-panel .ui__button {
+html[data-theme=light] .ui__modal-panel .ui__button .absolute-modal[data-modal-name=page-search] {
   background-color: #2AA298;
   color: #F0F0F0;
 }

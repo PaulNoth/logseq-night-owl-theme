@@ -114,7 +114,7 @@ html[data-theme="light"] {
     background-color: #F0F0F0;
   }
 
-  #main-content-container .ui__button, .ui__modal-panel .ui__button {
+  #main-content-container .ui__button, .ui__modal-panel .ui__button .absolute-modal[data-modal-name="page-search"] {
     background-color: #2AA298;
     color: #F0F0F0;
   }
