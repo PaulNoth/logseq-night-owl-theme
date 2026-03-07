@@ -129,6 +129,7 @@ html[data-theme=dark] {
   --ct-highlight-color: #7e57c2;
   --ls-selection-background-color: #1d3b53;
   --ls-primary-background-color: #011627;
+  --ct-tertiary-color: #1d3b53;
   --ct-primary-text-color: #d6deeb;
   --ls-title-text-color: #d2dee7;
   --ls-link-ref-text-color: #d6deeb;
@@ -236,6 +237,10 @@ html[data-theme=dark] .ui__modal-panel .ui__button {
   background-color: #7e57c2;
   color: #ffffff;
   border: none;
+}
+.dark-theme .absolute-modal[data-modal-name=page-search],
+html[data-theme=dark] .absolute-modal[data-modal-name=page-search] {
+  background-color: var(--ls-primary-background-color);
 }
 .dark-theme .cp__all_pages .ti-search,
 html[data-theme=dark] .cp__all_pages .ti-search {
@@ -510,6 +515,11 @@ html[data-theme=light] #main-content-container .ui__button,
 html[data-theme=light] .ui__modal-panel .ui__button {
   background-color: #2AA298;
   color: #F0F0F0;
+  border: none;
+}
+.white-theme .absolute-modal[data-modal-name=page-search],
+html[data-theme=light] .absolute-modal[data-modal-name=page-search] {
+  background-color: var(--ls-primary-background-color);
 }
 .white-theme .graph-filters,
 html[data-theme=light] .graph-filters {
