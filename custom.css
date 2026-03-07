@@ -515,6 +515,7 @@ html[data-theme=light] #main-content-container .ui__button,
 html[data-theme=light] .ui__modal-panel .ui__button {
   background-color: #2AA298;
   color: #F0F0F0;
+  border: none;
 }
 .white-theme .absolute-modal[data-modal-name=page-search],
 html[data-theme=light] .absolute-modal[data-modal-name=page-search] {
