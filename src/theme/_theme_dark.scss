@@ -61,13 +61,17 @@ html[data-theme="dark"] {
   }
 
   a.page-ref, a.external-link {
-    color: #d6deeb;
+    color: var(--ls-link-text-color);
     border-bottom: 1px dashed #122d42;
   }
 
   a.page-ref:hover, a.external-link:hover {
-    border-bottom: 1px dashed #82AAFF;
-    color: #82AAFF;
+    border-bottom: 1px dashed var(--ls-link-text-color);
+  }
+
+  a.external-link:before {
+    font-family: tabler-icons!important;
+    content: '\ea99';
   }
 
   .color-level {
@@ -93,11 +97,6 @@ html[data-theme="dark"] {
 
   #main-content input.form-checkbox:checked {
     background-color: var(--ls-page-checkbox-border-color);
-  }
-
-  a.external-link:before {
-    font-family: tabler-icons!important;
-    content: '\ea99';
   }
 
   .page-reference:hover {

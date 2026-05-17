@@ -180,14 +180,18 @@ html[data-theme=dark] .color-level .blocks-container {
 .dark-theme a.page-ref, .dark-theme a.external-link,
 html[data-theme=dark] a.page-ref,
 html[data-theme=dark] a.external-link {
-  color: #d6deeb;
+  color: var(--ls-link-text-color);
   border-bottom: 1px dashed #122d42;
 }
 .dark-theme a.page-ref:hover, .dark-theme a.external-link:hover,
 html[data-theme=dark] a.page-ref:hover,
 html[data-theme=dark] a.external-link:hover {
-  border-bottom: 1px dashed #82AAFF;
-  color: #82AAFF;
+  border-bottom: 1px dashed var(--ls-link-text-color);
+}
+.dark-theme a.external-link:before,
+html[data-theme=dark] a.external-link:before {
+  font-family: tabler-icons !important;
+  content: "\ea99";
 }
 .dark-theme .color-level,
 html[data-theme=dark] .color-level {
@@ -216,11 +220,6 @@ html[data-theme=dark] #sidebar-nav-wrapper .dropdown-wrapper a:hover {
 .dark-theme #main-content input.form-checkbox:checked,
 html[data-theme=dark] #main-content input.form-checkbox:checked {
   background-color: var(--ls-page-checkbox-border-color);
-}
-.dark-theme a.external-link:before,
-html[data-theme=dark] a.external-link:before {
-  font-family: tabler-icons !important;
-  content: "\ea99";
 }
 .dark-theme .page-reference:hover,
 html[data-theme=dark] .page-reference:hover {
@@ -492,13 +491,13 @@ html[data-theme=light] .tippy-wrapper {
 .white-theme a.page-ref, .white-theme a.external-link,
 html[data-theme=light] a.page-ref,
 html[data-theme=light] a.external-link {
-  color: #4876d6;
+  color: var(--ls-link-text-color);
   border-bottom: 1px dashed #d9d9d9;
 }
 .white-theme a.page-ref:hover, .white-theme a.external-link:hover,
 html[data-theme=light] a.page-ref:hover,
 html[data-theme=light] a.external-link:hover {
-  border-bottom: 1px dashed #4876d6;
+  border-bottom: 1px dashed var(--ls-link-text-color);
 }
 .white-theme a.external-link:before,
 html[data-theme=light] a.external-link:before {
@@ -737,37 +736,12 @@ html[data-theme=light] blockquote {
 }
 .white-theme,
 html[data-theme=light] {
-  /* Link hover improvements */
-}
-.white-theme .external-link,
-html[data-theme=light] .external-link {
-  color: #4876d6;
-}
-.white-theme .external-link:hover,
-html[data-theme=light] .external-link:hover {
-  color: #2AA298;
-}
-.white-theme,
-html[data-theme=light] {
   /* Improved contrast for markers */
 }
 .white-theme .marker-switch,
 html[data-theme=light] .marker-switch {
   background-color: #2AA298;
   color: #F0F0F0;
-}
-.white-theme,
-html[data-theme=light] {
-  /* Page reference hover */
-}
-.white-theme .page-ref,
-html[data-theme=light] .page-ref {
-  color: #4876d6;
-}
-.white-theme .page-ref:hover,
-html[data-theme=light] .page-ref:hover {
-  color: #2AA298;
-  background-color: transparent;
 }
 
 body {
