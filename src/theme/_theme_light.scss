@@ -97,12 +97,12 @@ html[data-theme="light"] {
   }
 
   a.page-ref, a.external-link {
-    color: #4876d6;
+    color: var(--ls-link-text-color);
     border-bottom: 1px dashed #d9d9d9;
   }
 
   a.page-ref:hover, a.external-link:hover {
-    border-bottom: 1px dashed #4876d6;
+    border-bottom: 1px dashed var(--ls-link-text-color);;
   }
 
   a.external-link:before {
@@ -301,28 +301,9 @@ html[data-theme="light"] {
     color: #403f53;
   }
 
-  /* Link hover improvements */
-  .external-link {
-    color: #4876d6;
-  }
-
-  .external-link:hover {
-    color: #2AA298;
-  }
-
   /* Improved contrast for markers */
   .marker-switch {
     background-color: #2AA298;
     color: #F0F0F0;
-  }
-
-  /* Page reference hover */
-  .page-ref {
-    color: #4876d6;
-  }
-
-  .page-ref:hover {
-    color: #2AA298;
-    background-color: transparent;
   }
 }
