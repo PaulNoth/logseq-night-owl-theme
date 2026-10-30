@@ -10,6 +10,10 @@
   background-color: var(--ct-secondary-color);
 }
 
+hr {
+  margin: 0.7em;
+}
+
 .white-theme,
 html[data-theme=light], .dark-theme, html[data-theme=dark] {
   /* == Backgrounds == */
