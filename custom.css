@@ -399,6 +399,15 @@ html[data-theme=dark] {
 html[data-theme=dark] .timestamp {
   color: #7fdbca;
 }
+.dark-theme,
+html[data-theme=dark] {
+  /* Better blockquote styling (DB) */
+}
+.dark-theme div[data-node-type=quote],
+html[data-theme=dark] div[data-node-type=quote] {
+  border-left: 3px solid var(--ls-page-blockquote-border-color);
+  background-color: var(--ls-page-blockquote-bg-color);
+}
 
 .white-theme,
 html[data-theme=light] {
@@ -737,12 +746,21 @@ html[data-theme=light] ::selection {
 }
 .white-theme,
 html[data-theme=light] {
-  /* Better blockquote styling */
+  /* Better blockquote styling (OG) */
 }
 .white-theme blockquote,
 html[data-theme=light] blockquote {
   border-left: 3px solid #2AA298;
   color: #403f53;
+}
+.white-theme,
+html[data-theme=light] {
+  /* Better blockquote styling (DB)*/
+}
+.white-theme div[data-node-type=quote],
+html[data-theme=light] div[data-node-type=quote] {
+  border-left: 3px solid #2AA298;
+  background-color: #F6F6F6;
 }
 .white-theme,
 html[data-theme=light] {

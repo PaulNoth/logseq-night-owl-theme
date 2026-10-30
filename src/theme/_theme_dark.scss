@@ -241,4 +241,10 @@ html[data-theme="dark"] {
   .timestamp {
     color: #7fdbca;
   }
+
+  /* Better blockquote styling (DB) */
+  div[data-node-type="quote"] {
+      border-left: 3px solid var(--ls-page-blockquote-border-color);
+      background-color: var(--ls-page-blockquote-bg-color);
+  }
 }

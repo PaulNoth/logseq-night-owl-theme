@@ -298,10 +298,16 @@ html[data-theme="light"] {
     color: #403f53;
   }
 
-  /* Better blockquote styling */
+  /* Better blockquote styling (OG) */
   blockquote {
     border-left: 3px solid #2AA298;
     color: #403f53;
+  }
+
+  /* Better blockquote styling (DB)*/
+  div[data-node-type="quote"] {
+      border-left: 3px solid #2AA298;
+      background-color: #F6F6F6;
   }
 
   /* Improved contrast for markers */
