@@ -111,13 +111,11 @@ html[data-theme="dark"] {
   #main-content-container .ui__button, .ui__modal-panel .ui__button {
     background-color: var(--ct-highlight-color);
     color: #ffffff;
-    border: none;
   }
 
   .view-action-type .property-value-inner > .jtrigger {
       background-color: var(--ct-highlight-color);
       color: #ffffff;
-      border: none;
       border-radius: inherit;
   }
 

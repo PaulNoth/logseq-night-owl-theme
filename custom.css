@@ -239,13 +239,11 @@ html[data-theme=dark] #main-content-container .ui__button,
 html[data-theme=dark] .ui__modal-panel .ui__button {
   background-color: var(--ct-highlight-color);
   color: #ffffff;
-  border: none;
 }
 .dark-theme .view-action-type .property-value-inner > .jtrigger,
 html[data-theme=dark] .view-action-type .property-value-inner > .jtrigger {
   background-color: var(--ct-highlight-color);
   color: #ffffff;
-  border: none;
   border-radius: inherit;
 }
 .dark-theme .absolute-modal[data-modal-name=page-search],
@@ -530,13 +528,11 @@ html[data-theme=light] #main-content-container .ui__button,
 html[data-theme=light] .ui__modal-panel .ui__button {
   background-color: var(--ct-secondary-color);
   color: #F0F0F0;
-  border: none;
 }
 .white-theme .view-action-type .property-value-inner > .jtrigger,
 html[data-theme=light] .view-action-type .property-value-inner > .jtrigger {
   background-color: var(--ct-secondary-color);
   color: #F0F0F0;
-  border: none;
   border-radius: inherit;
 }
 .white-theme .absolute-modal[data-modal-name=page-search],
