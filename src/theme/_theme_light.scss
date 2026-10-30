@@ -115,9 +115,16 @@ html[data-theme="light"] {
   }
 
   #main-content-container .ui__button, .ui__modal-panel .ui__button {
-    background-color: #2AA298;
+    background-color: var(--ct-secondary-color);
     color: #F0F0F0;
     border: none;
+  }
+
+  .view-action-type .property-value-inner > .jtrigger {
+      background-color: var(--ct-secondary-color);
+      color: #F0F0F0;
+      border: none;
+      border-radius: inherit;
   }
 
   .absolute-modal[data-modal-name="page-search"] {
