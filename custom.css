@@ -360,10 +360,6 @@ html[data-theme=dark] {
 html[data-theme=dark] .ls-block .bullet {
   background-color: #d6deeb;
 }
-.dark-theme .ls-block .bullet-closed,
-html[data-theme=dark] .ls-block .bullet-closed {
-  background-color: #5f7e97;
-}
 .dark-theme,
 html[data-theme=dark] {
   /* Inline code */
@@ -683,10 +679,6 @@ html[data-theme=light] {
 .white-theme .ls-block .bullet,
 html[data-theme=light] .ls-block .bullet {
   background-color: #403f53;
-}
-.white-theme .ls-block .bullet-closed,
-html[data-theme=light] .ls-block .bullet-closed {
-  background-color: #93A1A1;
 }
 .white-theme,
 html[data-theme=light] {
